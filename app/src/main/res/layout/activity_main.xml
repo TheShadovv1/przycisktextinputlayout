@@ -1,43 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+
+
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
 
-    <Button
-        android:id="@+id/mojprzycisk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mojprzycisk">
+        android:layout_height="match_parent"
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mojtextinput"
-            android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="40dp"
+
+        android:layout_marginRight="40dp"
+
+        android:layout_marginTop="100dp">
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
-            android:hint="hint" />
-    </com.google.android.material.textfield.TextInputLayout>
+
+            android:text="Podaj dane logowania"
+
+            android:textColor="#000"
+
+            android:textSize="30dp"
+
+            android:id="@+id/textdisplay"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+
+            android:textSize="20dp"
+
+            android:textColor="#000"
+
+            android:id="@+id/usernametextview"
+
+            android:text="Podaj Imie">
+
+        </TextView>
+
+        <EditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:hint="Podaj imie tutaj"
+
+            android:id="@+id/username">
+
+        </EditText>
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+
+            android:textSize="20dp"
+
+            android:textColor="#000"
+
+            android:id="@+id/passwordtextview"
+
+            android:text="Podaj nazwisko">
+
+        </TextView>
+
+        <EditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:inputType="textPassword"
+
+            android:hint="Podaj nazwisko tutaj"
+
+            android:id="@+id/password">
+
+        </EditText>
+
+        <Button
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/loginbutton"
+
+            android:text="Zaloguj">
+
+        </Button>
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
